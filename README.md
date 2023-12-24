@@ -1,4 +1,4 @@
-# JAVA API_POO tp avec SPRING BOOT 
+# JAVA REST API avec SPRING BOOT 
 # lien du projet : [TP_SPRING](https://github.com/NacerRgr/TP_POO_API.git)
 ## TP3
 ### etape 5
