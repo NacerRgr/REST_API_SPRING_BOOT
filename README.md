@@ -44,6 +44,20 @@ Utilisation de Bootstrap et Thymeleaf : La navbar ajoutée améliore la navigati
 <artifactId>bootstrap</artifactId>
 <version>5.3.0</version> <!-- Adjust the version to the latest available -->
 </dependency>
+### screen lancement de l'applicaton
+![Alt text](image.png)
+
+### screen page greetings
+![Alt text](image-1.png)
+
+### screen page addresses
+![Alt text](image-2.png)
+
+### screen page submit address
+![Alt text](image-3.png)
+
+### screen page recevoir les donnees de la part de l'API
+![Alt text](image-4.png)
 
 
 
