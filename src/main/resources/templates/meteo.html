@@ -1,0 +1,103 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <!-- Head content -->
+</head>
+<body>
+    <!-- Include the navbar fragment with updated syntax -->
+    <!DOCTYPE html>
+    <html xmlns:th="http://www.thymeleaf.org">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+      <title>meteo</title>
+    </head>
+    <body>
+      <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class=" text-white nav-link" href="/greeting">Greetings</a>
+            </li>
+            <li class="nav-item">
+              <a class="text-white nav-link" href="adresses">Address</a>
+            </li>
+            <li class="nav-item">
+              <a class="text-white nav-link" href="/address">SUbmit address</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    
+
+      <div class="col-md-8 offset-md-2">
+
+      <!-- <p th:text=" ${city} + ' !'" />
+      <p th:text=" ${lgt} + ' !'" />
+      <p th:text=" ${lat} + ' !'" />
+      <p th:text=" ${insee} + ' !'" />
+
+      <p th:text=" ${tmin} + ' !'" />
+      <p th:text=" ${tmax} + ' !'" />
+      <p th:text=" ${weather} + ' !'" /> -->
+
+
+    </div>
+
+
+    <section class="vh-100" style="background-color: #4B515D;">
+        <div class="container py-5 h-100">
+      
+          <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col-md-8 col-lg-6 col-xl-4">
+      
+              <div class="card" style="color: #4B515D; border-radius: 35px;">
+                <div class="card-body p-4">
+    
+      
+                  <div class="d-flex flex-column text-center mt-5 mb-4">
+                    <h6 class="display-4 mb-0 font-weight-bold" style="color: #1C2331;" th:text=" ${weather} + '°C'" />
+                    <span class="small" style="color: #868B94">Stormy</span>
+                  </div>
+      
+                  <div class="d-flex align-items-center">
+                    <div class="flex-grow-1" style="font-size: 1rem;">
+                      <div><i class="fas fa-wind fa-fw" style="color: #868B94;"></i> <span class="ms-1"  th:text=" ' tmin :'+${tmax} "/> 
+                        </span></div>
+                      <div><i class="fas fa-tint fa-fw" style="color: #868B94;"></i> <span class="ms-1"  th:text=" ' tmin :'+${tmin} "/> </span>
+                      </div>
+                      <div><i class="fas fa-tint fa-fw" style="color: #868B94;"></i> <span class="ms-1"  th:text=" ' city :'+${city} "/> </span>
+                      </div>
+                      <div><i class="fas fa-tint fa-fw" style="color: #868B94;"></i> <span class="ms-1"  th:text=" ' code_postal :'+${insee} "/> </span>
+                      </div>
+                      </div>
+                    </div>
+                    <div>
+                      <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-weather/ilu1.webp"
+                        width="100px">
+                    </div>
+                  </div>
+      
+                </div>
+              </div>
+      
+            </div>
+          </div>
+      
+        </div>
+      </section>
+
+
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </body>
+    </html>
+    
+</body>
+</html>
